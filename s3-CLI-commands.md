@@ -2,37 +2,37 @@
 
 Create Bucket
 
-aws s3 mb s3://my-bucket-name --region ap-south-1
+    aws s3 mb s3://my-bucket-name --region ap-south-1
 
 List Buckets
 
-aws s3 ls
+    aws s3 ls
 
 Delete Bucket
 
-aws s3 rb s3://my-bucket-name
+    aws s3 rb s3://my-bucket-name
 
 Delete Bucket (force, with all objects)
 
-aws s3 rb s3://my-bucket-name --force
+    aws s3 rb s3://my-bucket-name --force
 
 2. Object Operations
 
 Upload File
 
-aws s3 cp file.txt s3://my-bucket-name/
+    aws s3 cp file.txt s3://my-bucket-name/
 
 Upload with specific storage class
 
-aws s3 cp file.txt s3://my-bucket-name/ --storage-class STANDARD_IA
+    aws s3 cp file.txt s3://my-bucket-name/ --storage-class STANDARD_IA
 
 Download File
 
-aws s3 cp s3://my-bucket-name/file.txt .
+    aws s3 cp s3://my-bucket-name/file.txt .
 
 Delete File
 
-aws s3 rm s3://my-bucket-name/file.txt
+    aws s3 rm s3://my-bucket-name/file.txt
 
 3. Sync Operations (VERY IMPORTANT)
 
